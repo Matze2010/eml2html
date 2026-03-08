@@ -11,7 +11,7 @@ import (
 	"path"
 	"strings"
 
-	html "github.com/korylprince/eml2html"
+	html "github.com/Matze2010/eml2html"
 	walk "github.com/korylprince/go-fs-walk"
 )
 
