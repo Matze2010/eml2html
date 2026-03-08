@@ -163,7 +163,7 @@ func rewriteHTML(contentIDMap map[string]string, b []byte) ([]byte, error) {
 			if strings.ToLower(a.Key) == "src" && strings.HasPrefix(a.Val, "cid:") {
 				id := strings.TrimPrefix(a.Val, "cid:")
 				if dst, ok := contentIDMap[id]; ok {
-					a.Val = "../" + dst
+					a.Val = dst
 					n.Attr[idx] = a
 				}
 			}
